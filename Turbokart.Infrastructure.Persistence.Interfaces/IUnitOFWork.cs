@@ -1,6 +1,6 @@
 ﻿namespace Turbokart.Infrastructure.Persistence.Interfaces
 {
-    public interface IUnitOFWork: IDisposable
+    public interface IUnitOfWork: IDisposable
     {
         void Commit();
         void RollBack();
