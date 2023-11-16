@@ -21,7 +21,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{4CB21D8F-217E-4B8D-99F7-82D9146D53F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Domain.Entities", "Turbokart.Domain.Entities\Turbokart.Domain.Entities.csproj", "{3087F31E-E5C8-4986-B45F-860AC435B0C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Infrastructure.Persistence.EfContexts", "Turbokart.Infrastructure.Persistence.EfContexts\Turbokart.Infrastructure.Persistence.EfContexts.csproj", "{D97A5FD0-33FF-45C9-A607-332C526D23E3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3087F31E-E5C8-4986-B45F-860AC435B0C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3087F31E-E5C8-4986-B45F-860AC435B0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3087F31E-E5C8-4986-B45F-860AC435B0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3087F31E-E5C8-4986-B45F-860AC435B0C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D97A5FD0-33FF-45C9-A607-332C526D23E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D97A5FD0-33FF-45C9-A607-332C526D23E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D97A5FD0-33FF-45C9-A607-332C526D23E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D97A5FD0-33FF-45C9-A607-332C526D23E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -30,6 +48,8 @@ Global
 		{D32B4B4A-392F-400A-8CDC-898A0975D88C} = {D4969E5A-D741-4980-80E4-63CAFD74D915}
 		{6F036A4C-CC97-4553-94A3-D6F35FD011EC} = {26738BD8-7C4E-44F7-B917-87B71E88261E}
 		{4CB21D8F-217E-4B8D-99F7-82D9146D53F8} = {D57C1BEB-DD59-48DF-B8B8-305F4994D936}
+		{3087F31E-E5C8-4986-B45F-860AC435B0C8} = {A23085CA-0C84-4FAA-A6CD-CD0228C50B0C}
+		{D97A5FD0-33FF-45C9-A607-332C526D23E3} = {4CB21D8F-217E-4B8D-99F7-82D9146D53F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41743A4C-3AFD-4B99-995C-2048F8EB0BCF}
