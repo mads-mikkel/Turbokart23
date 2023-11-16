@@ -6,9 +6,9 @@ namespace Turbokart.Infrastructure.Persistence.Repositories
 {
     public abstract class RepositoryBase<T>: IRepository<T> where T : class
     {
-        private DbSet<T> set;
+        protected DbSet<T> set;
 
-        public RepositoryBase(DbContext dbContext)
+        protected RepositoryBase(DbContext dbContext)
         {
             this.set = dbContext.Set<T>();
         }

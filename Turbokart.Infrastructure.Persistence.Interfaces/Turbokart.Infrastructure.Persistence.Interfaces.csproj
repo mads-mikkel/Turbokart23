@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Turbokart.Domain.Entities\Turbokart.Domain.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
