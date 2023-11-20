@@ -31,7 +31,8 @@ namespace Turbokart.Application.UseCases
 
         public IEnumerable<Booking> GetAllBookings()
         {
-            throw new NotImplementedException();
+            IBookingRepository bookingRepository = unitOfWork.BookingRepository;
+            return bookingRepository.GetAll();
         }
 
         public IEnumerable<Booking> GetTodaysBookings()
