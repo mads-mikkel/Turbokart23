@@ -13,9 +13,9 @@ namespace Turbokart.Application.UseCases
             this.unitOfWork = unitOfWork;
         }
 
-        public void BookNew(DateTime dateTime, Customer customer)
+        public void BookNew(Booking booking, Customer customer)
         {
-            Booking booking = new Booking() { Start = dateTime, Customer = customer};
+            booking.Customer = customer;
 
             if(customer.CustomerId == 0)    // handle new customer that does not exist in the DB.
             {

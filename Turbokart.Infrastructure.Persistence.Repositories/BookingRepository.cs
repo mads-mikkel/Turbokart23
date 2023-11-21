@@ -13,7 +13,13 @@ namespace Turbokart.Infrastructure.Persistence.Repositories
 
         public IEnumerable<Booking> GetTodaysBookings()
         {
-            return set.Where(b => b.Start.Date == DateTime.Today).ToList();
+            return set.Include(b => b.Customer)
+                .Where(b => b.Start.Date == DateTime.Today).ToList();
+        }
+
+        public override IEnumerable<Booking> GetAll()
+        {
+            return set.Include(b => b.Customer);
         }
     }
 }

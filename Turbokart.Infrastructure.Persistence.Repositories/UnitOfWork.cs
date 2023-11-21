@@ -18,12 +18,12 @@ namespace Turbokart.Infrastructure.Persistence.Repositories
 
         public UnitOfWork(
             DbContext dbContext, 
-            IBookingRepository bookingRepository 
-            /*ICustomerRepository customerRepository*/)
+            IBookingRepository bookingRepository, 
+            ICustomerRepository customerRepository)
         {
             this.dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
             this.bookingRepository = bookingRepository ?? throw new ArgumentNullException(nameof(bookingRepository));
-            //this.customerRepository = customerRepository ?? throw new ArgumentNullException(nameof(customerRepository));
+            this.customerRepository = customerRepository ?? throw new ArgumentNullException(nameof(customerRepository));
         }
 
         public IBookingRepository BookingRepository => bookingRepository;

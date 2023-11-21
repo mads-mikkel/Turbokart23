@@ -13,7 +13,7 @@ namespace Turbokart.Infrastructure.Persistence.Repositories
             this.set = dbContext.Set<T>();
         }
 
-        public IEnumerable<T> GetAll()
+        public virtual IEnumerable<T> GetAll()
         {
             return set.ToList();
         }

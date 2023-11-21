@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 using Turbokart.Application.Interfaces;
+using Turbokart.Domain.Entities;
 
 namespace Turbokart.Tests.UoWRazorTestApp.Pages
 {
@@ -20,7 +21,9 @@ namespace Turbokart.Tests.UoWRazorTestApp.Pages
 
         public void OnGet()
         {
-
+            Customer c = new() { Name = "Jens Clausen fra Sønderjylland" };
+            Booking b = new() { Start = DateTime.Now };
+            bookingUseCase.BookNew(b, c);
         }
     }
 }

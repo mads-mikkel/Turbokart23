@@ -19,6 +19,7 @@ namespace Turbokart.Tests.UoWRazorTestApp
 
             builder.Services.AddDbContext<DbContext, TurbokartContext>();
             builder.Services.AddTransient<IBookingRepository, BookingRepository>();
+            builder.Services.AddTransient<ICustomerRepository, CustomerRepository>();
             builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
             builder.Services.AddTransient<IBookingUseCase, BookingUseCase>();
 
