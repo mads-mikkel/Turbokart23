@@ -2,3 +2,40 @@
 @model Turbokart.Presenter.Websites.TurbokartDK.Pages.BookingModel
 @{
 }
+
+<form>
+    <div class="input-group mt-3">
+        <span class="input-group-text">Email</span>
+        <input type="email" class="form-control me-5" placeholder="Indtast email" required>
+        <span class="input-group-text">Telefon</span>
+        <input type="tel" class="form-control" placeholder="Indtast telefon" pattern="[0-9]{8}" required>
+    </div>
+    <div class="input-group mt-3">
+        <span class="input-group-text">Dato</span>
+        <input type="date" class="form-control me-5" placeholder="Vælg dato" required />
+        <span class="input-group-text">Kl.</span>
+        <select class="form-select me-5" required>
+            <option disabled value="1000">10:00</option>
+            <option disabled value="1015">10:15</option>
+            <option value="1030">10:30</option>
+            <option value="1045">10:45</option>
+            <option value="1100">11:00</option>
+            <option value="1115">11:15</option>
+            <option value="1130">11:30</option>
+            <option value="1145">11:45</option>
+            <option value="1200">12:00</option>
+            <option value="1215">12:15</option>
+            <option value="1230">12:30</option>
+            <option value="1245">12:45</option>
+            <option value="1300">13:00</option>
+            <option value="1315">13:15</option>
+            <option value="1330">13:30</option>
+            <option value="1345">13:45</option>
+        </select>
+        <span class="input-group-text">Antal</span>
+        <input type="number" class="form-control" required />
+    </div>
+    <div class="input-group mt-3 float-end w-auto">
+        <input type="submit" class="btn btn-success px-3 py-2" value="Book denne tid!">
+    </div>
+</form>
