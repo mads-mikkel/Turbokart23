@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Turbokart.Application.UseCa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Presenter.Websites.TurbokartDK", "Turbokart.Presenter.Websites.TurbokartDK\Turbokart.Presenter.Websites.TurbokartDK.csproj", "{98D20626-1039-49D1-96D3-9B0B2436E02A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Presenter.Apis.TurbokartAPI", "Turbokart.Presenter.Apis.TurbokartAPI\Turbokart.Presenter.Apis.TurbokartAPI.csproj", "{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{98D20626-1039-49D1-96D3-9B0B2436E02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98D20626-1039-49D1-96D3-9B0B2436E02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98D20626-1039-49D1-96D3-9B0B2436E02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +95,7 @@ Global
 		{EB9536D8-E1A8-4F59-8DAC-181D3637D755} = {26738BD8-7C4E-44F7-B917-87B71E88261E}
 		{5B8B6C6C-4360-4578-A536-3EE2C3F819BE} = {26738BD8-7C4E-44F7-B917-87B71E88261E}
 		{98D20626-1039-49D1-96D3-9B0B2436E02A} = {1202519D-792C-41AB-8DD7-02EC8FD9A039}
+		{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55} = {D32B4B4A-392F-400A-8CDC-898A0975D88C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41743A4C-3AFD-4B99-995C-2048F8EB0BCF}
