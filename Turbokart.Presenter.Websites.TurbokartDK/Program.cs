@@ -1,3 +1,6 @@
+using Turbokart.Application.Interfaces;
+using Turbokart.Infrastructure.Networking.Services;
+
 namespace Turbokart.Presenter.Websites.TurbokartDK
 {
     public class Program
@@ -5,6 +8,7 @@ namespace Turbokart.Presenter.Websites.TurbokartDK
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddTransient<IBookingUseCase, BookingService>();
 
             // Add services to the container.
             builder.Services.AddRazorPages();

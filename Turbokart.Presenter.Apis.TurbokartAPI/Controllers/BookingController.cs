@@ -6,7 +6,7 @@ using Turbokart.Domain.Entities;
 namespace Turbokart.Presenter.Apis.TurbokartAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class BookingController: Controller
     {
         private readonly IBookingUseCase bookingUseCase;

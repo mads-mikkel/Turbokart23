@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Presenter.Website
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Presenter.Apis.TurbokartAPI", "Turbokart.Presenter.Apis.TurbokartAPI\Turbokart.Presenter.Apis.TurbokartAPI.csproj", "{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Networking", "Networking", "{D75FFDC2-6863-4430-BC2B-52C9089102C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Turbokart.Infrastructure.Networking.Services", "Turbokart.Infrastructure.Networking.Services\Turbokart.Infrastructure.Networking.Services.csproj", "{E8D11EC5-A8F1-49E2-B7D7-83D6A12B299E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D11EC5-A8F1-49E2-B7D7-83D6A12B299E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D11EC5-A8F1-49E2-B7D7-83D6A12B299E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D11EC5-A8F1-49E2-B7D7-83D6A12B299E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D11EC5-A8F1-49E2-B7D7-83D6A12B299E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +104,8 @@ Global
 		{5B8B6C6C-4360-4578-A536-3EE2C3F819BE} = {26738BD8-7C4E-44F7-B917-87B71E88261E}
 		{98D20626-1039-49D1-96D3-9B0B2436E02A} = {1202519D-792C-41AB-8DD7-02EC8FD9A039}
 		{5EC8BBB1-2A78-47A5-9F75-AE41A0AC1A55} = {D32B4B4A-392F-400A-8CDC-898A0975D88C}
+		{D75FFDC2-6863-4430-BC2B-52C9089102C3} = {D57C1BEB-DD59-48DF-B8B8-305F4994D936}
+		{E8D11EC5-A8F1-49E2-B7D7-83D6A12B299E} = {D75FFDC2-6863-4430-BC2B-52C9089102C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41743A4C-3AFD-4B99-995C-2048F8EB0BCF}
