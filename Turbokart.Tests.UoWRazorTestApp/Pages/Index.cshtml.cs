@@ -21,9 +21,9 @@ namespace Turbokart.Tests.UoWRazorTestApp.Pages
 
         public void OnGet()
         {
-            Customer c = new() { Name = "Jens Clausen fra Sønderjylland" };
+            /*Customer c = new() { Name = "Jens Clausen fra Sønderjylland" };
             Booking b = new() { Start = DateTime.Now };
-            bookingUseCase.BookNew(b, c);
+            bookingUseCase.BookNew(b, c);*/
         }
     }
 }

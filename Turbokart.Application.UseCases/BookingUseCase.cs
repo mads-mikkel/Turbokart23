@@ -13,14 +13,12 @@ namespace Turbokart.Application.UseCases
             this.unitOfWork = unitOfWork;
         }
 
-        public void BookNew(Booking booking, Customer customer)
+        public void BookNew(Booking booking)
         {
-            booking.Customer = customer;
-
-            if(customer.CustomerId == 0)    // handle new customer that does not exist in the DB.
+            if(booking.Customer.CustomerId == 0)    // handle new customer that does not exist in the DB.
             {
                 ICustomerRepository customerRepository = unitOfWork.CustomerRepository;
-                customerRepository.Save(customer);
+                customerRepository.Save(booking.Customer);
             }
 
             IBookingRepository bookingRepository = unitOfWork.BookingRepository;
